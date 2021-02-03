@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import ProfilePic from '../../styles/images/profile.svg'
 import ProjectPic from '../../styles/images/2.jpg'
 
-const Profile = () =>{
+const MyProfile = () =>{
 
     const {state,dispatch} = useContext(UserContext)
 
@@ -175,4 +175,4 @@ const Profile = () =>{
     )
 }
 
-export default Profile
+export default MyProfile

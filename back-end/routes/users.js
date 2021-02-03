@@ -37,4 +37,8 @@ router.post('/addExpertise',(requireLogin),(req,res)=>{
 
 })
 
+router.post('/userprofile',(req,res)=>{
+    console.log("userProfileAPI")
+})
+
 module.exports.router=router

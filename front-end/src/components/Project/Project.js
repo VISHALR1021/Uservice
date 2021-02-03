@@ -2,6 +2,7 @@ import {useEffect,useState} from 'react'
 import ProfilePic from '../../styles/images/profile.svg'
 import Pic1 from '../../styles/images/2.jpg'
 import {useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 function Project() {
@@ -17,7 +18,6 @@ function Project() {
 	}
 
 	useEffect(() => {
-		console.log(id)
 		fetch('/getproject',{
 			method:"post",
 			headers:{
@@ -30,7 +30,7 @@ function Project() {
 		})
 		.then((res)=>res.json())
 		.then((project)=>{
-			console.log(project)
+			console.log("Project: ",project)
 			setprojectInfo(project)
 		})
 	}, [])
@@ -60,7 +60,7 @@ function Project() {
 					<img src={ProfilePic} alt="" class="profile-image" />
 				</div>
 				<div class="profile-nav-info">
-					<h2 class="username">{projectInfo.project?projectInfo.project[0].author.toUpperCase():"Loading.."}</h2>
+					<Link to="/userprofile"><h2 class="username">{projectInfo.project?projectInfo.project[0].author:"Loading.."}</h2></Link>
 					<div class="address-info">
 						<span class="state">Karachi,</span>
 						<span class="country">Pakistan</span>
@@ -100,7 +100,7 @@ function Project() {
 				</div>
 				<div class="project-content" >
 					<h3 class="project-title">{projectInfo.project?projectInfo.project[0].title:"Loading.."}</h3>
-					<h4 class="project-category"> {projectInfo.project?projectInfo.project[0].categoryOne.toUpperCase():"Loading.."}, {projectInfo.project?projectInfo.project[0].categoryTwo.toUpperCase():"Loading.."}</h4>
+					<h4 class="project-category"> {projectInfo.project?projectInfo.project[0].categoryOne:"Loading.."} {projectInfo.project?projectInfo.project[0].categoryTwo :"Loading.."}</h4>
 					<p class="project-description">{projectInfo.project?projectInfo.project[0].projectDescription:"Loading.."}</p> 
 				</div>
 			</div>

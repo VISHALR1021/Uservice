@@ -5,7 +5,8 @@ import Signup from './components/Auth/Signup'
 import Signin from './components/Auth/Singin'
 import Navbar from './components/Navbar'
 import Home from './components/Home';
-import Profile from './components/user/Profile'
+import MyProfile from './components/user/MyProfile'
+import UserProfile from './components/user/UserProfile'
 import UpdateProfile from './components/user/UpdateProfile'
 import CreateProject from './components/Project/CreateProject'
 import Discover from './components/Discover'
@@ -66,15 +67,19 @@ function App() {
         <Signin />
       </Route>
 
-      <Route path="/profile">
-        <Profile />
+      <Route path="/myprofile">
+        <MyProfile />
+      </Route>
+
+      <Route path="/userprofile">
+        <UserProfile />
       </Route>
 
       <Route exact path="/createproject" >
         <CreateProject />
       </Route>
 
-      <Route exact path="/project/:id " >
+      <Route exact path="/project/:id" >
         <Project />
       </Route>
 
