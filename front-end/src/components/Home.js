@@ -9,6 +9,7 @@ import develope from '../styles/images/develope.svg'
 import one from '../styles/images/1.jpg'
 import two from '../styles/images/2.jpg'
 import three from '../styles/images/creative.jpg'
+import profile from '../styles/images/profile.svg';
 import Navbar from './Navbar'
 
 
@@ -93,6 +94,40 @@ function Home() {
                     <Link to="./discover.html"><img id="icon1" src={develope} /></Link>
                     <h3>Software Developements</h3>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about container">
+            <div class="about-top">
+                <h1 class="heading">About Us</h1>
+                <p>Lorem ipsum dolor sit amet, vim id essent definitiones. 
+                    Vim in dico commune mediocrem. Tantas pertinax et pri Apeirian platonem est ei, nam dico idque cu. 
+                    Eu graeci vocent epicurei his. Eu quis expetendis has, ea dico causae hendrerit duo.
+                </p>
+                <div class="creators">
+                    <div class="about-bot">
+                        <div class="about-icons">
+                            <Link to="./discover.html"><img id="icon" src={profile}/></Link>
+                            <h3>Vishal Rathore</h3>
+                            <p>UI UX Designer</p>
+                            <Link to="k173718@nu.edu.pk" class="email" type="email">K173718@nu.edu.pk</Link>
+                        </div>
+                        <div class="about-icons">
+                            <Link to="./discover.html"><img id="icon" src={profile}/></Link>
+                            <h3>Usman Hussain</h3>
+                            <p>Web & App Developer</p>
+                            <Link to="k173761@nu.edu.pk" class="email" type="email">K173761@nu.edu.pk</Link>
+                        </div>
+                        <div class="about-icons">
+                            <Link to="./discover.html"><img id="icon" src={profile}/></Link>
+                            <h3>Hussain Zohair</h3>
+                            <p>Photographer</p>
+                            <Link to="k17309@nu.edu.pk" class="email" type="email">K173709@nu.edu.pk</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
