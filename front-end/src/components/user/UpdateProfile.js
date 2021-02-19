@@ -4,7 +4,6 @@ import  '../../styles/styles.css'
 function UpdateProfile() {
     return (
         <div>
-            
             <div class="settings form">
                 <form>
                 <h2 class="title">Update Profile</h2>
