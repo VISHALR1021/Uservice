@@ -51,17 +51,17 @@ const MyProfile = () =>{
             <Navbar />
 
             <section id="profile">
-            <div class="profile-header">
+                <div class="profile-header">
             
-            <div class="profile-img">
-                <img src={ProfilePic} alt="" class="profile-image" width="240" />
-            </div>
+                <div class="profile-img">
+                    <img src={ProfilePic} alt="" class="profile-image" width="240" />
+                </div>
 
-            <div class="profile-nav-info">
-                <h2 class="username">{state?state.userName:"Loading.."}</h2>
-                <div class="address-info">
-                    <p class="state">Karachi,</p>
-                    <span class="country">Pakistan</span>
+                <div class="profile-nav-info">
+                    <h2 class="username">{state?state.userName:"Loading.."}</h2>
+                    <div class="address-info">
+                        <p class="state">Karachi,</p>
+                        <span class="country">Pakistan</span>
                 </div>
                 <div class="profile-side">
                     <p class="user-bio">Lorem ipsum dolor sit amet consectetur, id ut voluptatibus illum dolores.</p>
@@ -79,7 +79,6 @@ const MyProfile = () =>{
                     <a href="./settings.html"><i class="fa fa-cog"></i></a>
                 </div>
             </div>
-
             <label for="resume" class="ctn"><i class="fa fa-upload"></i> Resume</label>
             <input class="resume" type="file" style={{visibility: "hidden", display: "none"}} id="resume" />
             <a href="./styles/docs/Resume.pdf"  target="_blank"  data-after="" id="Resume"><button class="ctn"><i class="fa fa-download"></i> Resume</button></a>

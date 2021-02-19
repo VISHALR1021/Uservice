@@ -6,6 +6,9 @@ import photography from '../styles/images/photography.svg'
 import graphic from '../styles/images/graphic.svg'
 import art from '../styles/images/art.svg'
 import develope from '../styles/images/develope.svg'
+import one from '../styles/images/1.jpg'
+import two from '../styles/images/2.jpg'
+import three from '../styles/images/3.jpg'
 import Navbar from './Navbar'
 
 
@@ -13,19 +16,46 @@ function Home() {
   return (
     <div className="App">
     
-    <Navbar />
+    <Navbar></Navbar>
 
     <section id="main">
-        <div class="main container">
-            <div class="content">
-                <h1>Get our best services with </h1>
-                <h1>Professionals </h1>
-                <a href="./discover.html" type="button" class="ctn"> Photographers</a>          
-                <a href="./discover.html" type="button" class="ctn"> Developers</a>          
-                <a href="./discover.html" type="button" class="ctn"> Graphic Designers</a>          
-                <a href="./discover.html" type="button" class="ctn"> Illustrators</a>          
+        <div class="main slider">
+            <div class="slide">
+                <img src={one} alt=""></img>
+                <div class="main-content">
+                    <h1>Get our best services with </h1>
+                    <h1>Professionals </h1>
+                    <a href="./discover.html" type="button" class="ctn"> Photographers</a>          
+                    <a href="./discover.html" type="button" class="ctn"> Art & Illustrations</a>          
+                    <a href="./discover.html" type="button" class="ctn"> Graphic Designer </a>        
+                    <a href="./discover.html" type="button" class="ctn"> Developer</a>           
+                </div>
             </div>
-         </div>
+            <div class="slide">
+                <img src={two} alt=""></img>
+                <div class="main-content">
+                    <h1>Discover best Projects and </h1>
+                    <h1>Portfolios </h1>
+                    <a href="./discover.html" type="button" class="ctn"> Discover</a>                     
+                </div>
+            </div>
+            <div class="slide">
+                <img src={three} alt=""></img>
+                <div class="main-content">
+                    <h1>Meet the Skilled and </h1>
+                    <h1> Creative</h1>
+                    <a href="./discover.html" type="button" class="ctn"> Projects</a>                    
+                </div>
+            </div>
+            <div class="slide">
+                <img src={one} alt=""></img>
+                <div class="main-content">
+                    <h1>Get our best services with </h1>
+                    <h1>Professionals </h1>          
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <section id="services">
@@ -39,7 +69,7 @@ function Home() {
             </div>
             <div class="service-bot">
                 <div class="service-icons">
-                    <a href="/discover"><img id="icon1" src={photography}/></a>
+                    <a href="/discover.html"><img id="icon1" src={photography}/></a>
                     <h3>Photography</h3>
   
                  </div>
@@ -119,7 +149,6 @@ function Home() {
         <p>All  &copy; USERVICE  |  Designed & Developed by Vishal Rathore, Usman Hussain & Hussain Zohair</p>
         
     </div>
-      
     </div>
   );
 }
