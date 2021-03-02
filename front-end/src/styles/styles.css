@@ -273,6 +273,31 @@ h4 {
     padding: 10px 10%;
 }
 
+.search-box{
+    margin-top: 60px;
+    display: inline;
+    position: relative;
+    flex-direction: row;
+}
+
+.search-box .btn{
+    display: inline-block; 
+    width: 48px; 
+    display: flex; 
+    background: none; 
+    border: none; 
+    padding: 0px ; 
+    margin: 0px;
+}
+
+.search{
+    display: flex;
+    flex: row;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+}
+
 
 /* ======================================================================================================= */
 
@@ -1666,6 +1691,7 @@ select{
     position: relative;
     text-align: center;
     align-items: center;
+    display: inline-flexbox;
     line-height: 40px;
     width: 100%;
     text-decoration: none;

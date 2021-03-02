@@ -8,7 +8,8 @@ import art from '../styles/images/art.svg'
 import develope from '../styles/images/develope.svg'
 import one from '../styles/images/1.jpg'
 import two from '../styles/images/2.jpg'
-import three from '../styles/images/creative.jpg'
+import three from '../styles/images/5.png'
+import four from '../styles/images/4.jpg'
 import profile from '../styles/images/profile.svg';
 import Navbar from './Navbar'
 
@@ -62,6 +63,36 @@ function Home() {
             </div>
         </div>
     </section>
+
+    <div class="search-box">
+        <form action="#" method="POST" class="search">        
+            <input type="text" placeholder="Search..."/>
+            <button class="btn" ><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <Link to="./discover.html" class=""><img  src={one} alt=""/><h4>Photography</h4></Link>
+
+                </div>
+                <div class="col-3">
+                    <Link to="./discover.html" class=""> <img src={two} alt=""/><h4>Graphic Design</h4></Link>
+                   
+                </div>
+                <div class="col-3">
+                    <Link to="./discover.html" class=""><img  src={four} alt=""/><h4>Art & Illustrations</h4></Link>
+                    
+                </div>
+                <div class="col-3">
+                    <Link to="./discover.html" class=""> <img src={three} alt=""/><h4>Development</h4></Link>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="services">
         <div class="services container">
@@ -184,6 +215,8 @@ function Home() {
 
         </div>
     </footer>
+
+
     <div class="foot">
         <p>All  &copy; USERVICE  |  Designed & Developed by Vishal Rathore, Usman Hussain & Hussain Zohair</p>
         
